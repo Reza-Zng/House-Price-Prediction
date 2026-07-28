@@ -29,14 +29,19 @@ st.markdown("""
 # 3. Load Trained Assets
 @st.cache_resource
 def load_assets():
-    base_path = 'saved_models'
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     
-    model = joblib.load(f'{base_path}/tehran_housing_best_model.pkl')
-    model_features = joblib.load(f'{base_path}/model_features.pkl')
+    base_path = os.path.join(BASE_DIR, 'saved_models')
     
+    model_path = os.path.join(base_path, 'tehran_housing_best_model.pkl')
+    features_path = os.path.join(base_path, 'model_features.pkl')
+    
+    model = joblib.load(model_path)
+    model_features = joblib.load(features_path)
+
     addresses = [col.replace('Address_', '') for col in model_features if col.startswith('Address_')]
     addresses = sorted(addresses)
-    
+
     return model, model_features, addresses
 
 model, model_features, addresses = load_assets()
