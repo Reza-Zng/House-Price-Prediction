@@ -1,0 +1,1 @@
+This project utilizes the "House Price Prediction in dollar – Tehran (Spring-1400)" dataset, which was originally crawled from Divar.ir and made available on Kaggle by Soheil Tehranipour.
