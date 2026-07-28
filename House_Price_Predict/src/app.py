@@ -29,9 +29,9 @@ st.markdown("""
 # 3. Load Trained Assets
 @st.cache_resource
 def load_assets():
-    base_path = '../saved_models'
+    base_path = 'saved_models'
     
-    model = joblib.load(f'{base_path}/tehran_housing_rf_model.pkl')
+    model = joblib.load(f'{base_path}/tehran_housing_best_model.pkl')
     model_features = joblib.load(f'{base_path}/model_features.pkl')
     
     addresses = [col.replace('Address_', '') for col in model_features if col.startswith('Address_')]
