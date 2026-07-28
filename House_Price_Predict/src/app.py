@@ -29,7 +29,7 @@ st.markdown("""
 # 3. Load Trained Assets
 @st.cache_resource
 def load_assets():
-    base_path = '/mnt/d/REZA/ML Projects/Tehran house price/saved_models'
+    base_path = '../saved_models'
     
     model = joblib.load(f'{base_path}/tehran_housing_rf_model.pkl')
     model_features = joblib.load(f'{base_path}/model_features.pkl')
