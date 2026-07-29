@@ -61,7 +61,7 @@ with center_col:
     st.markdown("---")
 
     # Form Inputs
-    area = st.number_input("Area (sqm)", min_value=20, max_value=1000, value=80, step=5)
+    area = st.number_input("Area (m²)", min_value=20, max_value=1000, value=80, step=5)
     room = st.selectbox("Number of Rooms", options=[0, 1, 2, 3, 4, 5], index=2)
     address = st.selectbox("Neighborhood / Address", options=addresses)
 
