@@ -1,10 +1,10 @@
-# 🏢 Tehran House Price Prediction & Web App
+# Tehran House Price Prediction & Web App
 
 An end-to-end Machine Learning project to predict residential property prices in Tehran (in USD). It features a complete data pipeline—from exploratory analysis to hyperparameter tuning—and includes an interactive **Streamlit web interface** for inference.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 * **Dataset:** Tehran House Price Dataset (Spring 1400 / 2021, crawled from Divar.ir by Soheil Tehranipour).
 * **Goal:** Estimate property prices based on area, number of rooms, location (neighborhood), and key amenities.
 * **Best Model:** **Extra Trees Regressor** tuned via 5-Fold Grid Search Cross-Validation.
@@ -12,7 +12,7 @@ An end-to-end Machine Learning project to predict residential property prices in
 
 ---
 
-## 🛠️ Pipeline & Features
+## Pipeline & Features
 
 1. **Data Cleaning & Preprocessing:**
    * Handled string formatting and numeric conversions for `Area`.
@@ -32,7 +32,7 @@ An end-to-end Machine Learning project to predict residential property prices in
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone & Install Dependencies
 ```bash
