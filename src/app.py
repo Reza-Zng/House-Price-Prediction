@@ -65,7 +65,6 @@ with center_col:
     room = st.selectbox("Number of Rooms", options=[0, 1, 2, 3, 4, 5], index=2)
     address = st.selectbox("Neighborhood / Address", options=addresses)
 
-    st.write("**Amenities:**")
     col_a, col_b, col_c = st.columns(3)
     with col_a:
         parking = st.checkbox("Parking", value=True)
