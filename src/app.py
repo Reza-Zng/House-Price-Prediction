@@ -3,10 +3,10 @@ import pandas as pd
 import joblib
 import os
 
-# 1. Page Configuration (MUST be the first Streamlit command)
+# Page Configuration (MUST be the first Streamlit command)
 st.set_page_config(page_title="Tehran House Price Prediction", layout="wide")
 
-# 2. Custom CSS to force text, headings, and checkboxes to align center
+# Custom CSS to force text, headings, and checkboxes to align center
 st.markdown("""
     <style>
     /* Center main titles and text */
@@ -26,7 +26,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 3. Load Trained Assets
+# Load Trained Assets
 @st.cache_resource
 def load_assets():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -46,7 +46,7 @@ def load_assets():
 
 model, model_features, addresses = load_assets()
 
-# 4. Center all content using a middle column layout
+# Center all content using a middle column layout
 _, center_col, _ = st.columns([1, 2, 1])
 
 with center_col:
